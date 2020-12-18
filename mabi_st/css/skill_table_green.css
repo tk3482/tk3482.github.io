@@ -1,0 +1,97 @@
+﻿@charset "utf-8";
+
+#st_link{
+	width : 162px;
+	height : 12px;
+	margin : 1px 0px;
+	padding : 0px;
+	border-style : none;
+	background-color : black;
+	font-family : "ＭＳ Ｐゴシック", sas-serif;
+	color : white;
+	font-size : 10px;
+	text-align : right;
+	letter-spacing : 0px;
+	line-height : 12px;
+}
+#st_link a{
+	color : white;
+}
+
+.st_div{
+	width : 160px;
+	height : 240px;
+	margin : 0px;
+	padding : 0px;
+	border : solid 1px #162828;
+	background-color : #111919;
+	letter-spacing : 0px;
+	font-family : "ＭＳ Ｐゴシック", sas-serif;
+	color : white;
+	font-size : 10px;
+	text-align : center;
+}
+
+.st_div .st_title{
+	display : block;
+	margin : 0px 0px 2px 0px;
+	padding : 4px;
+	border-bottom : solid 2px #162828;
+	font-size : 12px;
+	line-height : 12px;
+	text-align : left;
+}
+
+.st_div .st_select{
+	display : inline-block;
+	width : 156px;
+	height : 18px;
+	margin : 0px 0px 2px 0px;
+	padding : 0px;
+	border : solid 1px #1a6464;
+	background : transparent;
+	background-color : #162828;
+	color : white;
+	font-size : 12px;
+}
+
+.st_select .st_option{
+	color : white;
+	background-color : #162828;
+}
+
+.st_div .st_body{
+	display : inline-block;
+	width : 154px;
+	height : 191px;
+	margin : 0px;
+	padding : 0px;
+	border : solid 1px #162828;
+	text-align : left;
+	white-space : nowrap;
+	font-family : "ＭＳ Ｐゴシック", sas-serif;
+	color : white;
+	font-size : 10px;
+	overflow-x : hidden;
+	overflow-y : scroll;
+	scrollbar-base-color : #111919;
+	scrollbar-arrow-color : #162828;
+}
+
+.st_div table{
+	border-style : none;
+	border-collapse: collapse;
+	margin : 2px;
+}
+.st_div td{
+	letter-spacing : 0px;
+	border-style : none;
+	margin : 0px;
+	padding : 0px;
+	font-family : "ＭＳ Ｐゴシック", sas-serif;
+	color : white;
+	font-size : 11px;
+	line-height : 11px;
+	text-align : left;
+	height : 15px;	
+}

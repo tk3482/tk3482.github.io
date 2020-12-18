@@ -1,0 +1,101 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<html lang="ja">
+  <head>
+    <title>
+      
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <script type="text/javascript">
+	document.onselectstart = function(){
+		return false;
+	};
+	document.oncontextmenu = function(){
+		return false;
+	};
+	document.onmousedown = function(){
+		try{
+			window.getSelection().removeAllRanges();
+		}catch(ex){
+		}
+	};
+	document.onmousemove = function(){
+		try{
+			window.getSelection().removeAllRanges();
+		}catch(ex){
+		}
+	};
+    </script>
+    <style type="text/css" media="all">
+	html{
+		border-style:none;
+	}
+	body{
+		background-color : transparent;
+		border-style:none;
+		margin : 4px;
+		padding : 0px;
+	}
+    </style>
+  </head>
+  <body scroll="no">
+
+    <script type="text/javascript" charset="utf-8">
+    
+	window["Base71"]=new (function(c,b){this.encode=function(n,r){r="";do{r=c.charAt(n%b)+r}while(n=Math.floor(n/b));return r};this.decode=function(n,r,i,l){for(r=0,i=l=n.length;i;){r+=Math.pow(b,l-i--)*c.indexOf(n.charAt(i))}return r}})("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!'()-~*._",71);
+/*	window["st_data"] = "";
+
+	(function(){
+	
+		st_data = location.href.split("?")[1];
+
+		if(!st_data){
+			st_data = "data:";
+		}
+		
+		
+		function decompress(d){
+		
+			var data = "";
+			
+			for(var i = 0; i < d.length; i += 2){
+			
+				data += ("00" + Base71.decode(d.substring(i, i + 2)).toString(17)).slice(-3);
+			}
+			return data;
+		}
+		
+		var splitted = st_data.split(',');
+		
+		for(var i = 0; i < splitted.length; ++i){
+		
+			if(!splitted[i].indexOf("data:")){
+				splitted[i] = "data:" + splitted[i].slice(5).toUpperCase();
+				break;
+			}
+			if(!splitted[i].indexOf("d:")){
+				splitted[i] = "data:" + decompress(splitted[i].slice(2)).toUpperCase();
+				break;
+			}
+		}
+
+		st_data = splitted.join(',');
+
+	})();*/
+    </script>
+    <script type="text/javascript" charset="utf-8" src="https://mabilog.harekaze.jp/tools/skill_table/data.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://mabilog.harekaze.jp/tools/skill_table/table.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
