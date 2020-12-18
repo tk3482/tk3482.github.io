@@ -1,6 +1,6 @@
 ﻿(function(){
 
-	var mabi_st = document.getElementsById("mabi_st");
+	var mabi_st = document.getElementById("mabi_st");
 
 	if(!mabi_st){
 		return;
