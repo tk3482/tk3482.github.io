@@ -1,4 +1,4 @@
-String.prototype.replaceAll = function (org, dest){   
+ï»¿String.prototype.replaceAll = function (org, dest){   
 	return this.split(org).join(dest);
 };
 
@@ -41,7 +41,7 @@ $(function(){
 			$tab.appendTo($tab_group_sub);
 		}
 		
-		$label = $('<label class="default_ability" />').html("‚±‚ÌË”\‚ğÅ‰‚©‚ç•\¦‚·‚é").appendTo($client);
+		$label = $('<label class="default_ability" />').html("ã“ã®æ‰èƒ½ã‚’æœ€åˆã‹ã‚‰è¡¨ç¤ºã™ã‚‹").appendTo($client);
 		$input = $('<input type="radio" name="slc" />').attr("id", "slc:" + i).val(i).prependTo($label).click(genCode);
 		
 		for(var j = 0; j < st_dataSet[i].skills.length; ++j){
@@ -56,16 +56,16 @@ $(function(){
 				$option = $('<option value="' + rank + '" />').html(rank).appendTo($select);
 				switch(n){
 					case 0:
-						$option.html("ƒ}ƒXƒ^[");
+						$option.html("ãƒã‚¹ã‚¿ãƒ¼");
 						break;
 					case 15:
 						$option.attr("selected", "selected");
 						break;
 					case 16:
-						$option.html("—ûK");
+						$option.html("ç·´ç¿’");
 						break;
 					case 17:
-						$option.html("–¢K“¾");
+						$option.html("æœªç¿’å¾—");
 						break;
 				}
 			}
@@ -162,7 +162,7 @@ function applyRace(){
 
 /*-----------------------------------------------------------------------------
  *
- * AJax—p
+ * AJaxç”¨
  *
  *-----------------------------------------------------------------------------*/
 
@@ -232,12 +232,12 @@ function getCode(){
 function getCode_callback(str){
 
 	if(str == null){
-		alert("ƒAƒJƒEƒ“ƒgî•ñ‚ªŠÔˆá‚Á‚Ä‚¢‚Ü‚·BB");
+		alert("ã‚¢ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±ãŒé–“é•ã£ã¦ã„ã¾ã™ã€‚ã€‚");
 		return;
 	}
 	load(str);
 	genCode();
-	//alert("“Ç‚İ‚İ‚Ü‚µ‚½B\n•ÒWŒã‚Í[“o˜^]ƒ{ƒ^ƒ“‚ğƒNƒŠƒbƒN‚µ‚Ä‚­‚¾‚³‚¢B");
+	//alert("èª­ã¿è¾¼ã¿ã¾ã—ãŸã€‚\nç·¨é›†å¾Œã¯[ç™»éŒ²]ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚");
 	getCode_callback.action && getCode_callback.action();
 	getCode_callback.action = null;
 }
@@ -246,7 +246,7 @@ getCode_callback.action = null;
 
 /*-----------------------------------------------------------------------------
  *
- * ƒCƒxƒ“ƒg—p
+ * ã‚¤ãƒ™ãƒ³ãƒˆç”¨
  *
  *-----------------------------------------------------------------------------*/
 
@@ -264,7 +264,7 @@ function preview(){
 
 /*-----------------------------------------------------------------------------
  *
- * ƒ†[ƒeƒBƒŠ
+ * ãƒ¦ãƒ¼ãƒ†ã‚£ãƒª
  *
  *-----------------------------------------------------------------------------*/
 
@@ -309,25 +309,25 @@ function genParams(){
 
 	var str = "";
 	
-	//Ë”\
+	//æ‰èƒ½
 	var slc = $("[name=slc]:checked").val();
 	if(slc){
 		str += "slc:" + slc + ",";
 	}
 
-	//í‘°
+	//ç¨®æ—
 	var race = $("[name=race]:checked").val();
 	if(race){
 		str += "race:" + race + ",";
 	}
 
-	//ƒXƒ^ƒCƒ‹
+	//ã‚¹ã‚¿ã‚¤ãƒ«
 	var style = $("[name=style]:checked").val();
 	if(style){
 		str += "style:" + style + ",";
 	}
 
-	//ƒf[ƒ^
+	//ãƒ‡ãƒ¼ã‚¿
 	str += "d:";
 	$("[name=rank]").each(function(){
 		var rank = this.value;
@@ -344,7 +344,7 @@ function genParams(){
 
 /*-----------------------------------------------------------------------------
  *
- * ƒEƒBƒU[ƒhƒXƒNƒŠƒvƒg
+ * ã‚¦ã‚£ã‚¶ãƒ¼ãƒ‰ã‚¹ã‚¯ãƒªãƒ—ãƒˆ
  *
  *-----------------------------------------------------------------------------*/
 $(function(){
