@@ -4,6 +4,8 @@ var st_image = "./img/skill_table.png";
 var st_style = "./css/skill_table.css";
 var IMG_EVE_DRC = 26;
 
+window["Base71"]=new (function(c,b){this.encode=function(n,r){r="";do{r=c.charAt(n%b)+r}while(n=Math.floor(n/b));return r};this.decode=function(n,r,i,l){for(r=0,i=l=n.length;i;){r+=Math.pow(b,l-i--)*c.indexOf(n.charAt(i))}return r}})("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!'()-~*._",71);
+
 (function(){
 
 	var img, map, query, splitted, css, ind, st, st_data;
@@ -14,6 +16,10 @@ var IMG_EVE_DRC = 26;
 	img.src = st_image;
 
 	st_data = location.href.split("?")[1];
+
+	if(window["MabiStAccounts"][st_data]){
+		st_data = window["MabiStAccounts"][st_data];
+	}
 
 	if(!st_data){
 		st_data = "data:";

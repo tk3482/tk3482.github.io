@@ -116,6 +116,10 @@ function load(params){
 	
 	params = params || getSrcParams($("#st_div_code_input").val());
 
+	if(window["MabiStAccounts"][params]){
+		params = window["MabiStAccounts"][params];
+	}
+
 	map = params.split(",");
 	for(var i = 0; i < map.length; ++i){
 		if(!map[i].indexOf("d:")){
@@ -206,7 +210,6 @@ function setCode_s(str){
 }
 setCode_s.type = null;
 setCode_s.action = null;
-*/
 
 function getCode(){
 
@@ -242,6 +245,7 @@ function getCode_callback(str){
 	getCode_callback.action = null;
 }
 getCode_callback.action = null;
+*/
 
 
 /*-----------------------------------------------------------------------------
@@ -408,9 +412,11 @@ $(function(){
 				case "#section8":
 					section4Next = "#section5";
 					break;
+				/*
 				case "#section7":
-					section4Next = "#section5";
+					section4Next = "#section9";
 					break;
+				*/
 			}
 		}
 		
@@ -418,6 +424,7 @@ $(function(){
 			nextSection = section4Next;
 		}
 	
+		/*
 		if(currentSection == "#section7"){
 			getCode_callback.action = function(){
 				go(nextSection);
@@ -426,7 +433,6 @@ $(function(){
 			return retVal;
 		}
 	
-		/*
 		if(nextSection == "#section9"){
 			setCode_s.action = function(){
 				go(nextSection);
