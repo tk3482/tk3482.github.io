@@ -34,6 +34,6 @@
 		eIframe.border = "0";
 		eIframe.src = "https://tk3482.github.io/mabi_st?" + data;
 		
-		eScript.parent.insertBefore(eIframe, eScript);
+		eScript.parentNode.insertBefore(eIframe, eScript);
 	}
 })();
